@@ -2344,7 +2344,7 @@ class CFGAccurate(ForwardAnalysis, CFGBase):    # pylint: disable=abstract-metho
                                                                endness=self.project.arch.register_endness)
 
                 # Clear the constraints!
-                base_state.release_plugin('solver_engine')
+                base_state.release_plugin('solver')
                 p = self.project.factory.path(base_state)
 
             # For speed concerns, we are limiting the timeout for z3 solver to 5 seconds. It will be restored afterwards
