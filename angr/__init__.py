@@ -43,6 +43,7 @@ from .state_hierarchy import StateHierarchy
 from .sim_state import SimState
 from .engines import SimEngineVEX, SimEngine
 from .calling_conventions import DEFAULT_CC, SYSCALL_CC, PointerWrapper, SimCC
+from .storage.file import SimFile, SimPackets, SimFileDescriptor, SimFileDescriptorDuplex
 
 # now that we have everything loaded, re-grab the list of loggers
 loggers.load_all_loggers()
